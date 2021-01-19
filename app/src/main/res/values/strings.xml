@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">MyBooks</string>
+    <string name="fisika">Fisika</string>
+    <string name="_1">#1</string>
+    <string name="todo">TODO</string>
+
+    <string name="title" tools:ignore="DuplicateDefinition">Title</string>
+    <string name="x">X</string>
+    <string name="find_books">find books</string>
+    <string name="happy">happy</string>
+
+    <string name="book_category">Book Category</string>
+    <string name="submit">submit</string>
+    <string name="selemat_detang">selemat Detang</string>
+    <string name="category">category</string>
+    <string name="enter">enter</string>
+    <string name="Enter">Enter</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/txtClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="@string/x"
+            android:textSize="22sp"
+            android:layout_marginTop="7dp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:gravity="left"/>
+
+        <EditText
+            android:id="@+id/cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/book_category"
+            android:layout_marginTop="30dp"
+           android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="@string/submit"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
