@@ -35,7 +35,7 @@ import java.util.Map;
 
 import models.Category;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
 
     private RequestQueue requestQueue;
     private SwipeRefreshLayout refresh;
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         dialog = new Dialog(this);
 
-        refresh.setOnRefreshListener((SwipeRefreshLayout.OnRefreshListener) this);
+        refresh.setOnRefreshListener(this);
         refresh.post(new Runnable() {
             @Override
             public void run() {
@@ -184,5 +184,10 @@ public class MainActivity extends AppCompatActivity {
     public void onRefresh(){
         category.clear();
         getData();
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
     }
 }
